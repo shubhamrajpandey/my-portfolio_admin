@@ -36,7 +36,7 @@ export default function DashboardPage() {
       const allMessages: Message[] = res.data.data || [];
 
       if (allMessages.length > messagesRef.current.length) {
-        toast.success("📩 New message received!");
+        toast.success("New message received!");
       }
 
       messagesRef.current = allMessages;
